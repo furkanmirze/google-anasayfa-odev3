@@ -1,3 +1,29 @@
+.buttons{
+  text-align: center;
+  /* buton elementi'nin kendisi inline elemandır. fakat kapsayıcı elemanı
+  block eleman olduğu için bulunduğu satırı kaplar.
+  bunun için text-align kodu ile butonları kolaylıkla ortalayabiliriz. */
+}
+
+ul.footer li{
+  /* .footer class'ına sahip li etiketi'nin görünen liste simgesini 
+  none ile gizledim. */
+  list-style: none;
+}
+
+.headerli{
+  /* .headerli class'ına sahip tüm elementlerin belirli bir yöne hizalanabilmesi için belirli bir genişlik değerinin olması gerek. hepsine sabit olarak 50px genişlik verdim. hizalama değerini de sağ olarak kullandım. */
+  width: 50px;
+  float: right;
+}
+
+/* .pic class'ına sahip element içindeki img elementine ulaştım, ve yeni profil fotoğrafımı 32x32 olacak şekilde yeniden boyutlandırdım. */
+
+.pic img{
+  height: 32px;
+  width: 32px;
+}
+
 .header {
   list-style-type: none;
   margin: 10px;
@@ -102,6 +128,15 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
   text-align: start;
   appearance: textfield;
   cursor: text;
+
+  /* 
+  search div'i içinde tüm alanları kaplaması için
+  genişlik ve yükseklik değerleri 100% verdim. 
+  input text'in siyah border özelliğini 0 yaptım ki görünmesin.
+  */
+  width: 100%;
+  height: 100%;
+  border: 0px;
 }
 
 .googlesearch {
