@@ -22,6 +22,62 @@ ul.footer li{
 .pic img{
   height: 32px;
   width: 32px;
+  border-radius: 5px;
+}
+
+/* 
+  Tüm butonların dış: üst ve sol boşlukları 10px verildi. 
+  buton kenarlıkları 1px düz çizgi #f2f2f2 renginde düzenlendi.
+  yazı fontu arial olarak ayarlandı.
+  yazı rengi #5f6368 olarak ayarlandı.
+  font büyüklüğü 14px olarak ayarlandı.
+  buton yüksekliği 36px olarak ayarlandı.
+*/
+
+button{
+  margin-top: 10px;
+  margin-right: 10px;
+  border: 1px solid #f2f2f2;
+  font-family: Arial;
+  color: #5f6368;
+  font-size: 14px;
+  height: 36px;
+}
+
+/* Buton üzerine gelince hover olayında gölgelendirme özelliği eklendi.*/
+
+button:hover{
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
+}
+
+/* 
+  mikrofon butonunun display özelliği flex olarak ayarlandı.
+  .voice-img classına sahip etiket align-items ile ortaya hizalandı.
+  sol taraftan 13px iç boşluk verildi.
+  üst dış boşluk -5px olarak ayarlandı.
+*/
+.voice-img{
+  display: flex;
+  align-items: center;
+  padding-left: 13px;
+  margin-top: -5px;
+}
+
+/* 
+  .voice-img class'ına sahip elementin içindeki img etiketine ulaştık ve mikrofon ico'nunu 20px olacak şekilde
+  genişlik ve yükseklik değerlerini belirledim. 
+*/
+
+.voice-img img{
+  width: 20px;
+  height: 20px;
+}
+
+/* 
+  Mikrofon üzerine gelince buton hissi vermesi için cursor (fare oku) özelliğini pointer olarak belirledim.
+*/
+.voice-img img:hover{
+  cursor: pointer;
 }
 
 .header {
@@ -60,6 +116,8 @@ ul.footer li{
   margin: 0 auto;
   margin-top: -77px;
   width: 582px;
+  /* Arama alanı'nın çerçevesine 15px yarıçap ekledim. */
+  border-radius: 15px;
 }
 
 .search-area:hover {
@@ -130,11 +188,10 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
   cursor: text;
 
   /* 
-  search div'i içinde tüm alanları kaplaması için
-  genişlik ve yükseklik değerleri 100% verdim. 
+  patika üzerindeki isteğe göre genişlik değerini 480px verdim. 
   input text'in siyah border özelliğini 0 yaptım ki görünmesin.
   */
-  width: 100%;
+  width: 480px;
   height: 100%;
   border: 0px;
 }
@@ -169,6 +226,8 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
   width: 100%;
   margin-left: -8px;
   line-height: 10px;
+  /* footer arkaplan rengini f2f2f2 olarak değiştirdim */
+  background-color: #f2f2f2;
 }
 
 .footerli {
